@@ -249,35 +249,36 @@ npx expo start
 ## Screenshots
 
 ### Home Screen
-
-(screen)
+<img width="414" height="896" alt="IMG_0403" src="https://github.com/user-attachments/assets/c78cf214-1993-4e2e-b437-18e4bbd862a3" />
 
 ### Quiz Flow
-
-(screen)
+<img width="414" height="896" alt="IMG_0407" src="https://github.com/user-attachments/assets/c59714fe-b10d-4883-826d-f16aabf8f655" />
+<img width="414" height="896" alt="IMG_0408" src="https://github.com/user-attachments/assets/ef7ccc0b-65a0-420f-b010-5abd37f8399f" />
+<img width="414" height="896" alt="IMG_0409" src="https://github.com/user-attachments/assets/151bd2eb-4d81-412f-8921-8a5caab397b2" />
+<img width="414" height="896" alt="IMG_0410" src="https://github.com/user-attachments/assets/a36746ac-b011-4727-ad73-e37cf242d348" />
 
 ### Explore Screen
-
-(screen)
+<img width="414" height="896" alt="IMG_0404" src="https://github.com/user-attachments/assets/c7498d14-1315-48d6-a7f5-b3b214900aae" />
 
 ### Movie Details
-
-(screen)
+<img width="414" height="896" alt="IMG_0411" src="https://github.com/user-attachments/assets/8a9f4901-0f8f-47ef-8514-8d4af70b0360" />
 
 ### Profile Screen
-
-(screen)
+<img width="414" height="896" alt="IMG_0405" src="https://github.com/user-attachments/assets/08d547b2-52f0-402c-a792-4e117a567202" />
 
 ### Edit Profile Modal
-
-(screen)
+<img width="414" height="896" alt="IMG_0406" src="https://github.com/user-attachments/assets/1d72b29e-af64-4ed6-a1db-22558ea5c0da" />
 
 ---
 
 ## Author
 Prodan Artem
+
 Web and Mobile application development
+
 VIZJA University in Warsaw
+
+---
 ---
 
 # Expo app config
