@@ -1,4 +1,4 @@
-// app/quiz/results.tsx
+
 // Displays movie recommendations based on the user's quiz answers
 // Movies are ranked using a score-based matching system which shows top 3 results
 
@@ -7,14 +7,10 @@ import { useState } from 'react';
 import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import MovieCard from '../../components/MovieCard';
-import { MOVIES } from '../../constants/movies';
-import { COLORS, SPACING } from '../../constants/theme';
 import { Movie } from '../../types/movie';
+import { COLORS, SPACING } from '../../constants/theme';
+import { getRecommendedMovies } from '../../utils/movieUtils';
 
-// Extends the Movie type, adding score used during recommendation calculation
-type ScoredMovie = Movie & {
-  score: number;
-};
 
 export default function ResultsScreen() {
   // Retrieve quiz answers passed from previous screens
@@ -26,6 +22,7 @@ export default function ResultsScreen() {
 
   // Stores the final movie selected after pressing the Eliminate button
   const [finalMovie, setFinalMovie] = useState<Movie | null>(null);
+
 
   // Calculate the three best recommendations
   const recommendedMovies = getRecommendedMovies(mood, genre, context);
@@ -109,47 +106,6 @@ export default function ResultsScreen() {
   );
 }
 
-/*
-  Recommendation Algorithm
-
-  Each movie starts with a score of 0.
-
-  +1 point if the movie matches the selected mood.
-  +1 point if the movie matches the selected genre.
-  +1 point if the movie matches the selected context.
-
-  Movies are sorted by score and the top 3 are displayed.
-*/
-function getRecommendedMovies(
-  selectedMood: string,
-  selectedGenre: string,
-  selectedContext: string
-): Movie[] {
-  const scoredMovies: ScoredMovie[] = MOVIES.map((movie) => {
-    let score = 0;
-
-    if (movie.moods.includes(selectedMood)) {
-      score += 1;
-    }
-
-    if (movie.genres.includes(selectedGenre)) {
-      score += 1;
-    }
-
-    if (movie.contexts.includes(selectedContext)) {
-      score += 1;
-    }
-
-    return {
-      ...movie,
-      score,
-    };
-  });
-
-  return scoredMovies
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 3);
-}
 
 const styles = StyleSheet.create({
   container: {

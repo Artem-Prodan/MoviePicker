@@ -1,4 +1,4 @@
-// app/(tabs)/profile.tsx
+
 // displaying user information and saved movies
 
 import { Ionicons } from '@expo/vector-icons';

@@ -1,4 +1,4 @@
-// app/(tabs)/explore.tsx
+
 // Explore screen (users can browse and search movies from the catalog)
 
 import { router } from 'expo-router';

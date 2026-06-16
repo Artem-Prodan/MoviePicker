@@ -1,4 +1,4 @@
-// components/MovieCard.tsx
+
 // Reusable movie preview card used in lists and quiz results
 
 import { Alert, Image, Pressable, StyleSheet, Text, View } from 'react-native';

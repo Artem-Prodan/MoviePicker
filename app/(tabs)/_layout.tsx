@@ -1,6 +1,5 @@
-// app/(tabs)/_layout.tsx
 
-// Defines the bottom tab navigation used to switch between the main sections of the app.
+// Defines the bottom tab navigation used to switch between the main sections of the app
 
 import { Tabs } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';

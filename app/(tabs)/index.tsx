@@ -1,5 +1,5 @@
-// app/(tabs)/index.tsx
-// Home screen where users start recommendation quiz.
+
+// Home screen where users start recommendation quiz
 
 import { router } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';

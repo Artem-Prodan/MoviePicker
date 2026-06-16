@@ -1,4 +1,4 @@
-// app/movie/[id].tsx
+
 // Detailed movie screen shown after a user taps on a movie card
 
 import { useLocalSearchParams } from 'expo-router';

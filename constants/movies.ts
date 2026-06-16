@@ -1,4 +1,4 @@
-// constants/movies.ts
+
 // Static movie catalog used by the quiz and explore screens
 // constants/movies.ts
 // Static movie catalog and filter options used by the quiz and explore screens.

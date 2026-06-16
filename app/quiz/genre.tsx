@@ -1,4 +1,4 @@
-// app/quiz/genre.tsx
+
 // 2 quiz step where user chooses a preferred movie genre
 
 import { router, useLocalSearchParams } from 'expo-router';

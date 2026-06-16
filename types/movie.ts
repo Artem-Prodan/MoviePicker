@@ -1,4 +1,4 @@
-// types/movie.ts
+
 // Type definition
 // describing the structure of a movie object
 

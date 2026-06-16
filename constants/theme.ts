@@ -1,4 +1,4 @@
-// constants/theme.ts
+
 // Colors and spacing used throughout the application.
 
 export const COLORS = {

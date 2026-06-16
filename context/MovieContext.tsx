@@ -1,4 +1,4 @@
-// context/MovieContext.tsx
+
 // Global app state for profile data and saved movies with AsyncStorage
 
 import AsyncStorage from '@react-native-async-storage/async-storage';

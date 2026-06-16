@@ -1,9 +1,10 @@
-// utils/movieUtils.ts
-// Helper functions for filtering and recommending movies.
+
+// Helper functions for filtering and recommending movies
 
 import { MOVIES } from '@/constants/movies';
 import { Movie } from '@/types/movie';
 
+// Extends the Movie type, adding score used during recommendation calculation
 type ScoredMovie = Movie & {
   score: number;
 };
@@ -14,6 +15,17 @@ export function searchMoviesByTitle(query: string): Movie[] {
   );
 }
 
+/*
+  Recommendation Algorithm
+
+  Each movie starts with a score of 0.
+
+  +1 point if the movie matches the selected mood.
+  +1 point if the movie matches the selected genre.
+  +1 point if the movie matches the selected context.
+
+  Movies are sorted by score and the top 3 are displayed.
+*/
 export function getRecommendedMovies(
   selectedMood: string,
   selectedGenre: string,

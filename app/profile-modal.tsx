@@ -1,4 +1,4 @@
-// app/profile-modal.tsx
+
 // Modal screen where the user can edit their username and profile picture
 
 import * as ImagePicker from 'expo-image-picker';

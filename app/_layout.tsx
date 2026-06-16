@@ -1,5 +1,5 @@
-// app/_layout.tsx
-// Root navigation configuration for the app using Expo Router.
+
+// Root navigation configuration for the app using Expo Router
 
 import { Stack } from 'expo-router';
 import { COLORS } from '../constants/theme';

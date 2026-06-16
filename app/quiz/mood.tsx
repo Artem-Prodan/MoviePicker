@@ -1,4 +1,4 @@
-// app/quiz/mood.tsx
+
 // 1 quiz step where user chooses their current mood
 
 import { router } from 'expo-router';
