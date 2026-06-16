@@ -1,24 +1,81 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
+// app/_layout.tsx
+// Root navigation configuration for the app using Expo Router.
+
 import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import { COLORS } from '../constants/theme';
+import { MovieProvider } from '@/context/MovieContext';
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
-export const unstable_settings = {
-  anchor: '(tabs)',
+const screenOptions = {
+  headerStyle: {
+    backgroundColor: COLORS.background,
+  },
+  headerTintColor: COLORS.primary,
 };
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+    <MovieProvider>
       <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
+        {/* Main tab navigation: Quiz, Explore, Profile */}
+        <Stack.Screen
+          name="(tabs)"
+          options={{ headerShown: false }}
+        />
+
+        {/* Quiz flow screens */}
+        <Stack.Screen
+          name="quiz/mood"
+          options={{
+            title: 'Mood',
+            ...screenOptions,
+            headerBackButtonDisplayMode: 'minimal' as const,
+          }}
+        />
+
+        <Stack.Screen
+          name="quiz/genre"
+          options={{
+            title: 'Genre',
+            ...screenOptions,
+          }}
+        />
+
+        <Stack.Screen
+          name="quiz/context"
+          options={{
+            title: 'Context',
+            ...screenOptions,
+          }}
+        />
+
+        <Stack.Screen
+          name="quiz/results"
+          options={{
+            title: 'Results',
+            ...screenOptions,
+          }}
+        />
+
+        {/* Detailed movie screen */}
+        <Stack.Screen
+          name="movie/[id]"
+          options={{
+            title: 'Movie Details',
+            ...screenOptions,
+            headerTintColor: '#fff',
+            headerBackButtonDisplayMode: 'minimal' as const,
+          }}
+        />
+
+          <Stack.Screen
+          name="profile-modal"
+          options={{
+            title: 'Edit Profile',
+            presentation: 'modal',
+            ...screenOptions,
+          }}
+        />
       </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    </MovieProvider>
   );
 }
