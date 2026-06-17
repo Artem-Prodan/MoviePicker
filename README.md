@@ -287,6 +287,7 @@ Preview Android build command:
 
 ```bash
 eas build --platform android --profile preview
+```
 
 ---
 ---
