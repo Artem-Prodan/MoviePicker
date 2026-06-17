@@ -279,6 +279,17 @@ Web and Mobile application development
 VIZJA University in Warsaw
 
 ---
+## Build
+
+The project was configured and built using EAS Build.
+
+Preview Android build command:
+
+```bash
+eas build --platform android --profile preview
+```
+
+---
 ---
 
 # Expo app config
