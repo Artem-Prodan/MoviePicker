@@ -4,6 +4,7 @@
     "slug": "moviepicker",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/logos/logo.png",
     "scheme": "moviepicker",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -14,12 +15,28 @@
 
     "android": {
       "package": "com.artemprodan.moviepicker",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logos/logo.png",
+        "backgroundColor": "#10001F"
+      },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
 
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/logos/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#10001F",
+          "dark": {
+            "backgroundColor": "#10001F"
+          }
+        }
+      ]
     ],
 
     "experiments": {
