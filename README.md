@@ -229,7 +229,7 @@ npm test
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/moviepicker.git
+git clone https://github.com/Artem-Prodan/MoviePicker.git
 ```
 
 Install dependencies:
